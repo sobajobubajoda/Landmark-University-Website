@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landmark University</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+               <a href="index.html"><img src="img/brand img/img3.jpg" alt="Landmark University Logo"></a> 
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">ABOUT LMU</a></li>
+                <li><a href="#admissions">ADMISSION & AIDS</a></li>
+                <li><a href="#academics">ACADEMICS</a></li>
+                <li><a href="#research">RESEARCH</a></li>
+                <li><a href="#business">BUSINESS SERVICES</a></li>
+                <li><a href="#resources">RESOURCES & OFFICES</a></li>
+                <li><a href="#life">LIFE AT LMU</a></li>
+                <li><a href="#alumni">ALUMNI</a></li>
+                <li><a href="#oer">OER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slideshow">
+            <img src="img/brand img/img1.jpg" class="slide" alt="Campus Image 1">
+            <img src="img/brand img/images.jpg" class="slide" alt="Campus Image 2">
+            <img src="img/academics/img10.jpg" class="slide" alt="Campus Image 3">
+            <img src="img/academics/img7.jpg" class="slide" alt="Campus Image 3">
+            <img src="img/academics/img8.jpg" class="slide" alt="Campus Image 3">
+            <img src="img/sports/img12.jpg" class="slide" alt="Campus Image 3">
+        </div>
+        <div class="hero-overlay">
+            <h1>Welcome to Landmark University</h1>
+            <p>Breaking New Grounds in Education</p>
+            <a href="#explore" class="cta">Explore LMU</a>
+        </div>
+    </section>
+
+    <!-- News & Events -->
+    <section class="news">
+        <h2>Latest News & Events</h2>
+        <div class="news-container">
+            <div class="news-card">Latest Research</div>
+            <div class="news-card">Upcoming Conferences</div>
+            <div class="news-card">Student Achievements</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Landmark University. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+    
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.opacity = index === slideIndex ? "1" : "0";
+            });
+    
+            slideIndex = (slideIndex + 1) % slides.length; // Loop back to first image
+        }
+    
+        setInterval(showSlides, 3000); // Change every 3 seconds
+    </script>
+    
+</body>
+</html>
